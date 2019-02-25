@@ -1,5 +1,6 @@
 import sys
 from ctypes import *
+import time
 
 import clipboard
 import tkinter as tk
@@ -46,3 +47,4 @@ if __name__ == '__main__':
             translate_text = translate(current_text, 'vi', 'en')
             old_text = current_text
             popup('Translated: %s' % translate_text, get_mouse_position(), DEFAULT_TIMEOUT)
+        time.sleep(1)
